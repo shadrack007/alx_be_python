@@ -9,7 +9,8 @@ def perform_operation(num1, num2, operation):
         case 'divide':
             if num2 == 0:
                 return "You can not divide by zero"
-            result = num1 / num2
+            elif num2 != 0:
+                result = num1 / num2
         case _:
             return 'Unknown operation specified'
     return result
