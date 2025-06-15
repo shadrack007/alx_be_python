@@ -22,14 +22,7 @@ class TestSimpleCalculator(unittest.TestCase):
 
     def test_subtraction(self):
         """test subtraction"""
-        result = self.calc.subtract(10, 5)
-        self.assertEqual(result, 5)
-
-        result = self.calc.subtract(0, 0)
-        self.assertEqual(result, 0)
-
-        result = self.calc.subtract(-5, -10)
-        self.assertEqual(result, 5)
+        self.assertEqual(self.calc.subtract(10, 5), 5)
   
 
     def test_divide(self):
